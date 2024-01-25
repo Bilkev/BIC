@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    backdrop-filter: blur(8px) !important;
+    padding: 20px !important;
+    height: 60px; /* Set the desired height for the navbar */
+    position: fixed; /* Make navbar fixed at the top */
+    top: 10px; /* Distance from the top */
+    left: 10px; /* Distance from the left */
+    right: 10px; /* Distance from the right */
+    border-radius: 10px; /* Optional: Adds rounded corners */
+    z-index: 1000; /* Ensures the navbar stays on top of other elements */
+}
+
+.nav-link:hover,
+.dropdown-item:hover {
+    text-decoration: underline; /* Add underline on hover */
+    text-decoration-thickness: 0.2em; /* Adjust thickness */
+    letter-spacing: 0.2em; /* Add more letter spacing */
+    transform: scale(1.1);
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+    transition: transform 0.3s, text-shadow 0.3s, padding-left 0.3s, text-decoration 0.3s,
+                text-decoration-thickness 0.3s, letter-spacing 0.3s; /* Include new properties in transition */
+    padding-left: 1rem;
+}
+
+@media (max-width: 768px) {
+    .navbar-brand img {
+        height: 30px; /* Adjust the size to fit the mobile navbar */
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-collapse {
+        background-color: rgba(0, 0, 0, 0.8); /* Dark background for the menu */
+        backdrop-filter: blur(8px);
+        padding: 10px; /* Optional padding for better spacing */
+        border-radius: 5px; /* Optional rounded corners */
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px !important; /* Reduced padding on mobile */
+    }
+}
+
+
+/* Rest of your CSS */
+
+
+
+
+.navbar-brand {
+    display: flex; /* Use flex display to control the layout */
+    align-items: center; /* Align items vertically within the flex container */
+}
+
+.navbar-brand img {
+    margin-right: 10px; /* Add space on the right of the logo image */
+}
+
+.navbar-brand span {
+    padding-left: 10px; /* Add space on the left of the text */
+    padding-right: 10px; /* Add space on the right of the text */
+}
+
+
+.btn-primary {
+    background-color: rgb(0, 170, 255, 0.75);  /* Color with opacity */
+    box-shadow: 0 0 15px #00aaff;
+    
+}
+/* Glow effect and scale on hover for both buttons */
+.btn-lg:hover {
+    box-shadow: 0 0 25px #00aaff; /* Adjust the color and size of the glow effect */
+    transform: scale(1.05); /* Increase the scale value for a larger size increase */
+    transition: all 0.3s ease-in-out; /* Smooth transition for the effect */
+}
+
+/* Add this style to your existing CSS or in a separate stylesheet */
+#myCarousel {
+    height: 100vh;  /* Set the height to 100% of the viewport height */
+    max-width: 100%;  /* Set a maximum width to ensure it doesn't become too wide on larger screens */
+    margin-bottom: 20px;  /* Adjust margin as needed */
+}
+
+/* Adjust the style of the carousel images */
+#myCarousel .carousel-item img {
+    object-fit: cover;  /* Ensure the images cover the entire carousel area */
+    height: 100vh;  /* Make the images fill the height of the carousel */
+    width: auto;  /* Make the images fill the width of the carousel */
+}
+
+/* Adjust the style of the carousel caption if needed */
+#myCarousel .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(8px);
+    padding: 1%;
+    margin-bottom: 2%;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+}
+
+.feature-icon {
+    width: 80px;
+    height: 80px;
+    background-color: transparent !important;
+    border: 1px solid #0dcaf0;
+    border-radius: 50%;
+    color: #fff;
+}
